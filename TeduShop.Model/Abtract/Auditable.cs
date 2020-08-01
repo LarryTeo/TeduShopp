@@ -1,0 +1,23 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Text;
+
+namespace TeduShop.Model.Abtract
+{
+    public abstract class Auditable : IAuditable
+    {
+
+        public DateTime? CreateDate { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        [MaxLength(256)]
+        public string CreateBy { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public DateTime? UpdateDate { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        [MaxLength]
+        public string UpdateBy { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        [MaxLength(256)]
+        public string MetaKeyword { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        [MaxLength(256)]
+        public string MetaDescription { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public bool Status { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+    }
+}
