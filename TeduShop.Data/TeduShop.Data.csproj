@@ -59,6 +59,12 @@
     <Compile Include="IFratructure\ResponsitoryBase.cs" />
     <Compile Include="IFratructure\UnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Responsitories\FooterResponsitory.cs" />
+    <Compile Include="Responsitories\MenuGroupResponsitory.cs" />
+    <Compile Include="Responsitories\MenuResponsitory.cs" />
+    <Compile Include="Responsitories\OrderResponsitory.cs" />
+    <Compile Include="Responsitories\ProductCategoryResponsitoty.cs" />
+    <Compile Include="Responsitories\ProductResponsitory.cs" />
     <Compile Include="TeduShopDbContext.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -75,9 +81,7 @@
       <Name>TeduShop.Model</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Responsitories\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

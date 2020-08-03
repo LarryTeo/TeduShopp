@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace TeduShop.Data.IFratructure
 {
-    public abstract class ResponsitoryBase<T> where T : class
+    public abstract class ResponsitoryBase<T> : IResponsitory<T> where T : class
     {
         #region Properties
         private TeduShopDbContext dataContext;
@@ -123,6 +123,11 @@ namespace TeduShop.Data.IFratructure
         public bool CheckContains(Expression<Func<T, bool>> predicate)
         {
             return dataContext.Set<T>().Count<T>(predicate) > 0;
+        }
+
+        IQueryable<T> IResponsitory<T>.GetMultiPaging(Expression<Func<T, bool>> filter, out int total, int index, int size, string[] includes)
+        {
+            throw new NotImplementedException();
         }
         #endregion
     }

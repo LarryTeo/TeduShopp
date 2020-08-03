@@ -25,7 +25,7 @@ namespace TeduShop.Model.Models
         public string Yahoo { set; get; }
         [MaxLength(50)]
         public string FaceBook { set; get; }
-        [MaxLength(50)]
+    
         public bool Status { set; get; }
         public int? DisplayOrder { set; get; }
 

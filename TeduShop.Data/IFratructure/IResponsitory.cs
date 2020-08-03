@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace TeduShop.Data.IFratructure
 {
+    // T đại diện cho 1 kiểu dữ liệu mà ta chưa biết, T có thể dùng cho bất kỳ kiểu dữ liệu nào
    public interface IResponsitory <T> where T : class
     {
         //Marks an entity as new
