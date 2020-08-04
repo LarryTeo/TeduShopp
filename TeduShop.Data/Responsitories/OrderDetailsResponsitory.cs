@@ -8,13 +8,13 @@ using TeduShop.Model.Models;
 
 namespace TeduShop.Data.Responsitories
 {
-    public interface IOrderResponsitory
+    public interface IOrderDetailsResponsitory
     {
 
     }
-    public class OrderResponsitory :ResponsitoryBase<Order>, IOrderResponsitory
+   public class OrderDetailsResponsitory : ResponsitoryBase<OrderDetail>, IOrderDetailsResponsitory
     {
-        public OrderResponsitory (IDbFactory dbFactory) : base(dbFactory)
+        public OrderDetailsResponsitory(IDbFactory dbFactory) : base(dbFactory)
         {
 
         }

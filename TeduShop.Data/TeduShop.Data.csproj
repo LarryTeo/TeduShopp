@@ -62,9 +62,18 @@
     <Compile Include="Responsitories\FooterResponsitory.cs" />
     <Compile Include="Responsitories\MenuGroupResponsitory.cs" />
     <Compile Include="Responsitories\MenuResponsitory.cs" />
+    <Compile Include="Responsitories\OrderDetailsResponsitory.cs" />
     <Compile Include="Responsitories\OrderResponsitory.cs" />
+    <Compile Include="Responsitories\PageResponsitory.cs" />
+    <Compile Include="Responsitories\PostResponsitory.cs" />
     <Compile Include="Responsitories\ProductCategoryResponsitoty.cs" />
     <Compile Include="Responsitories\ProductResponsitory.cs" />
+    <Compile Include="Responsitories\ProductTagResponsitory.cs" />
+    <Compile Include="Responsitories\SlideResponsitory.cs" />
+    <Compile Include="Responsitories\SupportOnlineResponsitory.cs" />
+    <Compile Include="Responsitories\SystemConfigResponsitory.cs" />
+    <Compile Include="Responsitories\TagResponsitory.cs" />
+    <Compile Include="Responsitories\VisitorStatisticResponsitory.cs" />
     <Compile Include="TeduShopDbContext.cs" />
   </ItemGroup>
   <ItemGroup>
