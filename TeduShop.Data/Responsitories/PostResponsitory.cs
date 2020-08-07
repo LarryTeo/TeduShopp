@@ -8,7 +8,7 @@ using TeduShop.Model.Models;
 
 namespace TeduShop.Data.Responsitories
 {
-    public interface IResponsitory
+    public interface IResponsitory : IResponsitory<Post>
     {
 
     }

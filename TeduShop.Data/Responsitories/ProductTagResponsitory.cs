@@ -8,7 +8,7 @@ using TeduShop.Model.Models;
 
 namespace TeduShop.Data.Responsitories
 {
-    public interface IProductTagResponsitory
+    public interface IProductTagResponsitory : IResponsitory<ProductTag>
     {
 
     }

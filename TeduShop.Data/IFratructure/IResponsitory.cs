@@ -18,6 +18,8 @@ namespace TeduShop.Data.IFratructure
 
         //Marks an entity as modified
         void Delete(T entity);
+        void Delete(int id);
+
         //Delte Multi records
         void DeleteMulti(Expression<Func<T, bool>> where);
         //Get an entity by int id

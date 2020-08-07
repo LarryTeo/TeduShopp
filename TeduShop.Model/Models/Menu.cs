@@ -21,7 +21,7 @@ namespace TeduShop.Model.Models
         public int? DisplayOrder { set; get; }
 
         [Required]
-        public int GroupId { set; get; }
+        public int GroupID { set; get; }
         // bắt đầu tạo thuộc tính cho khóa ngoại
         [ForeignKey("GroupID")]
         public virtual MenuGroup MenuGroup { set; get; }// thuộc tính virtual liên kết đến bảng cha
