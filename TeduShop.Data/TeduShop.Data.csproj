@@ -86,6 +86,7 @@
     <Compile Include="Responsitories\OrderDetailsResponsitory.cs" />
     <Compile Include="Responsitories\OrderResponsitory.cs" />
     <Compile Include="Responsitories\PageResponsitory.cs" />
+    <Compile Include="Responsitories\PostCategoryResponsitory.cs" />
     <Compile Include="Responsitories\PostResponsitory.cs" />
     <Compile Include="Responsitories\ProductCategoryResponsitoty.cs" />
     <Compile Include="Responsitories\ProductResponsitory.cs" />
