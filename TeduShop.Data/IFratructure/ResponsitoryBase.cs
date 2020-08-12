@@ -31,9 +31,9 @@ namespace TeduShop.Data.IFratructure
             dbSet = DbContext.Set<T>();
         }
         #region Implementation
-        public virtual void Add(T entity)
+        public virtual T Add(T entity)
         {
-            dbSet.Add(entity);
+          return dbSet.Add(entity);
         }
 
         public virtual void Update(T entity)
@@ -42,14 +42,14 @@ namespace TeduShop.Data.IFratructure
             dataContext.Entry(entity).State = EntityState.Modified;
         }
 
-        public virtual void Delete(T entity)
+        public virtual T Delete(T entity)
         {
-            dbSet.Remove(entity);
+         return   dbSet.Remove(entity);
         }
-        public virtual void Delete(int id)
+        public virtual T Delete(int id)
         {
             var entity = dbSet.Find(id);
-            dbSet.Remove(entity);
+          return  dbSet.Remove(entity);
         }
 
 
