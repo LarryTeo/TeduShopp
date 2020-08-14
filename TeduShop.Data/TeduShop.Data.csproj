@@ -58,25 +58,9 @@
     <Compile Include="IFratructure\IUnitOfWork.cs" />
     <Compile Include="IFratructure\ResponsitoryBase.cs" />
     <Compile Include="IFratructure\UnitOfWork.cs" />
-    <Compile Include="Migrations\202008051331041_IntialDB.cs" />
-    <Compile Include="Migrations\202008051331041_IntialDB.designer.cs">
-      <DependentUpon>202008051331041_IntialDB.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202008051347514_InitialDB.cs" />
-    <Compile Include="Migrations\202008051347514_InitialDB.designer.cs">
-      <DependentUpon>202008051347514_InitialDB.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202008051401103_InitialDB1.cs" />
-    <Compile Include="Migrations\202008051401103_InitialDB1.designer.cs">
-      <DependentUpon>202008051401103_InitialDB1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202008051426133_InitialDB2.cs" />
-    <Compile Include="Migrations\202008051426133_InitialDB2.designer.cs">
-      <DependentUpon>202008051426133_InitialDB2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202008061246005_InitialDB3.cs" />
-    <Compile Include="Migrations\202008061246005_InitialDB3.designer.cs">
-      <DependentUpon>202008061246005_InitialDB3.cs</DependentUpon>
+    <Compile Include="Migrations\202008140330383_InitialDB.cs" />
+    <Compile Include="Migrations\202008140330383_InitialDB.designer.cs">
+      <DependentUpon>202008140330383_InitialDB.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -113,20 +97,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202008051331041_IntialDB.resx">
-      <DependentUpon>202008051331041_IntialDB.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202008051347514_InitialDB.resx">
-      <DependentUpon>202008051347514_InitialDB.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202008051401103_InitialDB1.resx">
-      <DependentUpon>202008051401103_InitialDB1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202008051426133_InitialDB2.resx">
-      <DependentUpon>202008051426133_InitialDB2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202008061246005_InitialDB3.resx">
-      <DependentUpon>202008061246005_InitialDB3.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202008140330383_InitialDB.resx">
+      <DependentUpon>202008140330383_InitialDB.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

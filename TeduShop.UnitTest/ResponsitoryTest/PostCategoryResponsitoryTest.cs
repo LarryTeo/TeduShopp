@@ -11,32 +11,41 @@ using TeduShop.Model.Models;
 namespace TeduShop.UnitTest.ResponsitoryTest
 {
     [TestClass]
-    public class PostCategoryResponsitoryTest
+    public class PostCategoryRepositoryTest
     {
         IDbFactory dbFactory;
-        IPostCategoryResponsitory objResponsitory;
+        IPostCategoryResponsitory objRepository;
         IUnitOfWork unitOfWork;
+
         [TestInitialize]
         public void Initialize()
         {
             dbFactory = new DbFactory();
-            objResponsitory = new PostCategoryResponsitory(dbFactory);
+            objRepository = new PostCategoryResponsitory(dbFactory);
             unitOfWork = new UnitOfWork(dbFactory);
         }
+
+        //[TestMethod]
+        //public void PostCategory_Repository_GetAll()
+        //{
+        //    var list = objRepository.GetAll().ToList();
+        //    Assert.AreEqual(3, list.Count);
+        //}
+
         [TestMethod]
-        public void PostCategory_Responsitory_Create()
+        public void PostCategory_Repository_Create()
         {
             PostCategory category = new PostCategory();
-            category.Name = "Test Category";
-            category.Alias = "Test-Category";
+            category.Name = "Test category";
+            category.Alias = "Test-category";
             category.Status = true;
-            var result = objResponsitory.Add(category);
+
+            var result = objRepository.Add(category);
             unitOfWork.Commit();
 
             Assert.IsNotNull(result);
             Assert.AreEqual(1, result.ID);
-
-
         }
+
     }
 }
